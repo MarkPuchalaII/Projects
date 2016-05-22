@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+  <head>
+    <link rel='stylesheet' type='text/css' href='helpStyles.css' />
+    <title>Help: Numeric Converter</title>
+    <meta charset='utf-8'>
+  </head>
+
+  <body>
+    <div id='outer'>
+      <h1>Help</h1>
+
+        <h2>Using The App</h2>
+          <h3>Calculating Numbers</h3>
+            <img src='GIFs/calculatingNumbers.gif' /><br/>
+            Type a number, and click 'Calculate'
+        <br/><br/><br/>
+        <h3>Resetting Values</h3>
+            <img src='GIFs/resettingValues.gif' /><br/>
+            Simply hit 'Clear'
+        <br/><br/><br/>
+        <h2>Feedback</h2>
+          <textarea></textarea>
+          <input type='submit' value='Submit'>
+        <h2>Bug Reports</h2>
+          <textarea></textarea>
+          <input type='submit' value='Submit'>
+        <h2>Feature Requests</h2>
+          <textarea></textarea>
+          <input type='submit' value='Submit'>
+          <h2>Contact Us</h2>
+              <form>
+                First name: <br/><input type='text' name='firstname' value='first name'><br/>
+                Last name: <br/><input type='text' name='lastname' value='last name'><br/>
+                E-mail: <br/><input type='email' name='email' value='e-mail address'><br/><br/>
+              </form>
+            Message: <br/><textarea id='contact' onchange='characterLimit'></textarea><br/>
+    </div>
+    <button id='help'
+            onclick='parent.location="../binary calculator/binaryCalculator.html"'>
+      Back
+    </button>
+  </body>
+</html>
