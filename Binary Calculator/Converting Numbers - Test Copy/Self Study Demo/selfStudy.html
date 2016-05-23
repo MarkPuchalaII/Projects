@@ -1,0 +1,73 @@
+<!Doctype html>
+<html>
+  <head>
+    <title>Converting Numbers - Try it yourself!</title>
+    <meta charset='utf-8'>
+    <script src="../Converting Numbers/convertingNumbersFunctions.js"></script>
+    <script src="selfStudyFunctions.js"></script>
+    <link type='text/css' rel='stylesheet' href='selfStudyStyles.css'/>
+  </head>
+
+  <body>
+    <div id='top'>
+      <button onclick='demonstrate()'>How it's done</button>
+      <button onclick='refresh("nothing")'>Clear</button>
+    </div>
+    <div class='space'></div>
+    <div id="div1">
+      <input type='text'        id='binary'
+             size='13' placeholder='101001011010'
+             maxlength='16'
+             oninput='input = document.getElementById("binary");
+                      refresh("binary");
+                      compute(input,false)'>
+      <br/>
+      <div id='binaryHints'>
+
+      </div>
+    </div>
+    <div id="div2">
+      <input type='text'        id='octal'
+             size='13' placeholder=' Octal'
+             maxlength='16'
+             oninput='input = document.getElementById("octal");
+                      refresh("octal");
+                      compute(input,false)'>
+      <br/>
+
+      <div id='octalHints'>
+
+      </div>
+    </div>
+    <div id="div3">
+      <input type='text'        id='decimal'
+              size='13' placeholder=' Decimal'
+              maxlength='16'
+              oninput='input = document.getElementById("decimal");
+                       refresh("decimal");
+                       compute(input,false)'>
+     <br/>
+
+     <div id='decimalHints'>
+
+     </div>
+    </div>
+    <div id="div4">
+      <input type='text'        id='hexadecimal'
+             size='13' placeholder=' Hexadecimal'
+             maxlength='16'
+             oninput='input = document.getElementById("hexadecimal");
+                      refresh("hexadecimal");
+                      compute(input,false)'>
+      <br/>
+
+      <div id='hexadecimalHints'>
+
+      </div>
+    </div>
+    <button id='help'
+            onclick='parent.location="../Converting Numbers/convertingNumbers.html"'>
+      Back
+    </button>
+  </body>
+</html>
