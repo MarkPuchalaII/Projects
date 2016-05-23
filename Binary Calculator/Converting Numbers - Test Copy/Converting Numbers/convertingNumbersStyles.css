@@ -1,0 +1,49 @@
+body {
+  background: deepSkyBlue;
+  }
+
+#outer {
+  position: relative;
+}
+
+#inner {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  margin-top: -8.5em;
+  margin-right: -11.5em;
+}
+table,td {
+  margin: auto;
+  text-align:right;
+  border-spacing: 10px 2px;
+}
+
+input,button,textarea {
+  border-radius: 10px;
+  padding: 10px;
+  border: none;
+  /*border-bottom: solid 5px #c9c9c9;*/
+}
+
+button {
+  width: 100%;
+}
+
+#help {
+  position: fixed;
+  bottom: 5px;
+  right: 5px;
+  border-top: 3px solid grey;
+  border-left: 3px solid grey;
+  margin-top: 5px;
+  margin-left: 5px;
+  width: 3.5em;
+  height: 2.5em;
+}
+
+* {
+  font-size:1.05em;
+  font-family: Arial;
+  font-weight: bold;
+}

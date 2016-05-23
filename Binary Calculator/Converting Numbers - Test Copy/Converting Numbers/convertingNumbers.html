@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang='en'>
+  <head>
+    <title>Converting Numbers between Bases</title>
+    <meta charset='utf-8'>
+    <script src="convertingNumbersFunctions.js"></script>
+    <style media="screen">
+
+    </style>
+    <link type='text/css' rel='stylesheet' href='convertingNumbersStyles.css'/>
+  </head>
+
+  <body>
+      <div id='outer' style='height:100vh;width:100%;'> <!-- div to contain the webapp -->
+        <div id='inner'><!-- div to position the webapp -->
+          <table>
+            <caption>Enter a number below <br>and click calculate to convert:</caption>
+            <tr>
+              <!--Row #1 Binary-->
+              <td>Binary:</td><!--Label-->
+              <td><input type='text'        id='binary'
+                         size='13'          placeholder=' Binary'
+                         maxlength='16'
+                         oninput='label = document.getElementById("binary");
+                                  refresh("binary");
+                                  compute(label,false)'>
+              </td><!--textbox-->
+            </tr>
+            <!--Row #2 Octal-->
+            <tr>
+              <td >Octal:</td><!--Label-->
+              <td><input type='text'        id='octal'
+                         size='13'          placeholder=' Octal'
+                         maxlength='16'
+                         oninput='label = document.getElementById("octal");
+                                  refresh("octal");
+                                  compute(label,false)'>
+              </td><!--textbox-->
+            </tr>
+            <!--Row #3 Decimal-->
+            <tr>
+              <td >Decimal:</td><!--Label-->
+              <td><input type='text'        id='decimal'
+                          size='13' placeholder=' Decimal'
+                          maxlength='16'
+                         oninput='label = document.getElementById("decimal");
+                                  refresh("decimal");
+                                  compute(label,false)'>
+              </td><!--textbox-->
+            </tr>
+            <!--Row #4 Hexadecimal-->
+            <tr>
+              <td >Hexadecimal:</td><!--Label-->
+              <td><input type='text'        id='hexadecimal'
+                         size='13' placeholder=' Hexadecimal'
+                         maxlength='16'
+                         oninput='label = document.getElementById("hexadecimal");
+                                  refresh("hexadecimal");
+                                  compute(label,false)'>
+              </td><!--textbox-->
+            </tr>
+            <tr>
+              <td><button onclick='refresh("nothing")'>Clear</button></td>
+              <td><button onclick='compute(label,true)'>Calculate</button></td>
+            </tr>
+            <tr>
+              <td colspan='2'>
+                <button onclick='parent.location="../Self-Study/selfStudy.html"'>
+                  Try it Yourself!
+                </button>
+              </td>
+            </tr>
+          </table>
+        </div>
+          <button id='help' onclick='parent.location="../Help Page/help.html"'>Help</button>
+      </div>
+  </body>
+</html>
