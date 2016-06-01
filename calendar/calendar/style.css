@@ -1,0 +1,30 @@
+*{
+  color: white;
+  font-family: helvetica;
+}
+body{
+  background-color: #282C34;
+}
+
+#calendar{
+  position:absolute;
+  margin:auto;
+  top:0; left:0; bottom: 0; right:0;
+  text-align:center;
+  width:38em;
+  height:26em;
+  border-collapse: collapse;
+}
+
+#month{
+  background-color:green;
+  font-size: 1.5em;
+}
+#days{
+  background-color:#9900CC;
+}
+#weeks td{
+  color: black;
+  background-color:#ffffff;
+  border-bottom: solid black 1px;
+}
